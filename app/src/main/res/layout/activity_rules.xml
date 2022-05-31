@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rules"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rules2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewR"
+        android:layout_width="374dp"
+        android:layout_height="381dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Цель игры: набрать максимальное количество баллов за 300 секунд, ответив на 10 вопросов.\n\nК каждому вопросу дается три варианта ответов. Если игрок не знает правильный ответ — можно воспользоваться подсказкой. За правильный ответ без подсказки — игрок получает 2 балла, с подсказкой — 1 балл. Если ответ неправильный — 0 баллов.\n\nЕсли 300 секунд истекли, а игрок не успел до конца пройти викторину -  ему присваивается то количество очков, которое он успел набрать. "
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewR"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/rules" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/butPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearL"
+        android:layout_marginHorizontal="120sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:padding="10dp"
+        android:text="Начать!"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+</RelativeLayout>

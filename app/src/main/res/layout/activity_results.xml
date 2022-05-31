@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".Results">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="@string/result" />
+
+
+    <TextView
+        android:id="@+id/correctA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textView2"
+        android:text="@string/tru"
+        android:textSize="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/butC"
+
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menu"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correctA"
+        android:layout_marginTop="300dp"
+android:layout_centerHorizontal="true"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:padding="10dp"
+        android:text="@string/back"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level1"
+    android:background="@color/gray">
+
+
+    <TextView
+        android:id="@+id/textlvl1"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/gray2"
+        android:textSize="18dp"
+        android:text="Вопрос1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl1a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlvl1"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:padding="10dp"
+        android:text="@string/ansver1"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl1a2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvl1a1"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:padding="10dp"
+        android:text="@string/ansver2"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl1a3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvl1a2"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:padding="10dp"
+        android:text="@string/ansver3"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvl1a3"
+        android:layout_marginHorizontal="12sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_back_green"
+        android:padding="10dp"
+        android:text="@string/next"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl1h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvl1a3"
+        android:layout_marginHorizontal="90sp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:padding="10dp"
+        android:text="@string/hint"
+        android:textColor="@color/black95"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+        android:text="05:00" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="298dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/lvl1h"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray2"
+        android:fontFamily="sans-serif-medium"
+        android:text="подсказка"
+        android:textSize="20dp" />
+
+</RelativeLayout>
